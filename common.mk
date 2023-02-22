@@ -105,9 +105,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti.recovery \
     android.hardware.boot@1.2-service
 
-# Blur
-TARGET_ENABLE_BLUR := true
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -178,8 +175,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
-
-TARGET_HAS_UDFPS := true
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
@@ -274,8 +269,6 @@ PRODUCT_PACKAGES += \
 # Moto Dolby
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
-
-TARGET_EXCLUDES_AUDIOFX := true
 
 # Net
 PRODUCT_PACKAGES += \

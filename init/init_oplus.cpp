@@ -75,4 +75,6 @@ void vendor_load_properties() {
         default:
             LOG(ERROR) << "Unexpected RF version: " << rf_version;
     }
+    OverrideProperty("ro.rice.maintainer", "Jack The Ripper");
+    OverrideProperty("ro.rice.chipset", "Snapdragon 888 5G");
 }
